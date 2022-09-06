@@ -24,30 +24,50 @@ main {
   height: 100vh;
 }
 
-#description {
+#description,
+#goal {
   margin: 3rem 0;
-  padding: 2rem;
+  padding: 3rem 2rem;
   border: 1px solid hsl(0, 0%, 50%);
   border-radius: 0.75rem;
 }
 
-#description h1 {
+#description h1,
+#goal h1 {
   margin-bottom: 0.75rem;
   text-transform: uppercase;
 }
 
-#description > p {
+#description > p,
+#goal article {
   text-align: justify;
 }
 
-#nav-cards {
-  display: flex;
-  justify-content: space-around;
-  /* gap: 2rem; */
-  flex-wrap: wrap;
+#goal > p,
+#goal article {
+  margin-bottom: 0.75rem;
 }
 
-#nav-cards > div {
+#goal article > p {
+  display: inline;
+}
+
+#goal article p:first-child {
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+#nav-cards,
+#goal-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+#nav-cards > div,
+#goal-cards > div {
   min-height: 300px;
   display: flex;
   flex-direction: column;

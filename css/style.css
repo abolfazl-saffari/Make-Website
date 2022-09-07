@@ -18,7 +18,8 @@ header nav {
   margin: auto;
 }
 
-main {
+main,
+footer {
   width: 95vw;
   max-width: 1440px;
   margin: auto;
@@ -43,7 +44,7 @@ main {
 }
 
 #rules > ol {
-  border-left: 1px solid black;
+  border-left: 1px solid hsl(0, 0%, 0%);
 }
 
 #description h1,
@@ -92,33 +93,52 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex: 200px 0 0;
   padding: 2rem;
   background-color: hsl(0, 0%, 60%);
   border-radius: 0.75rem;
 }
 
-#table {
+#nav-cards > div > img,
+#goal-cards > div > img,
+#rule-cards > div > img,
+#section-cards > div > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+#nav-cards > div > article,
+#goal-cards > div > article,
+#rule-cards > div > article,
+#section-cards > div > article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+#section {
   text-transform: capitalize;
 }
 
-#table table {
+#section table {
   width: 80%;
   margin: auto;
 }
 
-#table table thead tr > th {
+#section table thead tr > th {
   text-align: center;
 }
 
-#table table,
+#section table,
 td {
-  border: 1px solid black;
+  border: 1px solid hsl(0, 0%, 0%);
 }
 
 #nav-cards > div > a {
-  background-color: #e03c43;
+  background-color: hsl(357, 73%, 56%);
   padding: 0.5rem 0.75rem;
   border-radius: 0.75rem;
 }
@@ -129,4 +149,31 @@ ul {
   align-items: center;
   padding: 1rem 0;
   list-style-type: none;
+}
+
+footer p {
+  color: hsl(0, 0%, 60%);
+  text-align: center;
+  font-size: 3rem;
+  padding: 4rem 0;
+}
+
+@media only screen and (max-width: 425px) {
+  #rules {
+    flex-direction: column;
+  }
+  #rules > ol {
+    margin-top: 0.75rem;
+    border-left: 0px solid hsl(0, 0%, 0%);
+    border-top: 1px solid hsl(0, 0%, 0%);
+    padding: 0.75rem 0;
+  }
+
+  #rules > ol > li {
+    margin-bottom: 0.75rem;
+  }
+
+  #rules > p {
+    margin: 0;
+  }
 }

@@ -74,17 +74,20 @@ main {
 
 #nav-cards,
 #goal-cards,
-#rule-cards {
+#rule-cards,
+#section-cards {
   display: flex;
   justify-content: space-evenly;
   gap: 1.5rem;
+  text-align: center;
   flex-wrap: wrap;
   margin-bottom: 3rem;
 }
 
 #nav-cards > div,
 #goal-cards > div,
-#rule-cards > div {
+#rule-cards > div,
+#section-cards > div {
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -94,6 +97,24 @@ main {
   padding: 2rem;
   background-color: hsl(0, 0%, 60%);
   border-radius: 0.75rem;
+}
+
+#table {
+  text-transform: capitalize;
+}
+
+#table table {
+  width: 80%;
+  margin: auto;
+}
+
+#table table thead tr > th {
+  text-align: center;
+}
+
+#table table,
+td {
+  border: 1px solid black;
 }
 
 #nav-cards > div > a {

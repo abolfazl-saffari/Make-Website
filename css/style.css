@@ -7,6 +7,7 @@
 
 header {
   position: sticky;
+  position: -webkit-sticky;
   top: 0;
   background-color: hsl(0, 0%, 100%);
   border-bottom: 1px solid hsl(0, 0%, 50%);
@@ -21,7 +22,6 @@ main {
   width: 95vw;
   max-width: 1440px;
   margin: auto;
-  height: 100vh;
 }
 
 #description,

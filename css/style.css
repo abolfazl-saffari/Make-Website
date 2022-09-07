@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+
+header nav {
+  max-width: 1440px;
+  margin: auto;
+}
+
+main,
+footer {
+  width: 95vw;
+  max-width: 1440px;
+  margin: auto;
+}
+
+#description,
+#goal,
+#rules {
+  margin: 3rem 0;
+  padding: 3rem 2rem;
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 0.75rem;
+}
+
+#rules {
+  display: flex;
+  align-items: center;
+}
+
+#rules > p {
+  margin-right: 0.75rem;
+}
+
+#rules > ol {
+  border-left: 1px solid hsl(0, 0%, 0%);
+}
+
+#description h1,
+#goal h1 {
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+#description > p,
+#goal article,
+#rules ol {
+  text-align: justify;
+}
+
+#goal > p,
+#goal article {
+  margin-bottom: 0.75rem;
+}
+
+#goal article > p {
+  display: inline;
+}
+
+#goal article p:first-child {
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+#nav-cards,
+#goal-cards,
+#rule-cards,
+#section-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  text-align: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+
+#nav-cards > div,
+#goal-cards > div,
+#rule-cards > div,
+#section-cards > div {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 200px 0 0;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 60%);
+  border-radius: 0.75rem;
+}
+
+#nav-cards > div > img,
+#goal-cards > div > img,
+#rule-cards > div > img,
+#section-cards > div > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+#nav-cards > div > article,
+#goal-cards > div > article,
+#rule-cards > div > article,
+#section-cards > div > article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+#section {
+  text-transform: capitalize;
+}
+
+#section table {
+  width: 80%;
+  margin: auto;
+}
+
+#section table thead tr > th {
+  text-align: center;
+}
+
+#section table,
+td {
+  border: 1px solid hsl(0, 0%, 0%);
+}
+
+#nav-cards > div > a {
+  background-color: hsl(357, 73%, 56%);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+footer p {
+  color: hsl(0, 0%, 60%);
+  text-align: center;
+  font-size: 3rem;
+  padding: 4rem 0;
+}
+
+@media only screen and (max-width: 425px) {
+  #rules {
+    flex-direction: column;
+  }
+  #rules > ol {
+    margin-top: 0.75rem;
+    border-left: 0px solid hsl(0, 0%, 0%);
+    border-top: 1px solid hsl(0, 0%, 0%);
+    padding: 0.75rem 0;
+  }
+
+  #rules > ol > li {
+    margin-bottom: 0.75rem;
+  }
+
+  #rules > p {
+    margin: 0;
+  }
+}

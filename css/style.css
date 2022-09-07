@@ -25,11 +25,25 @@ main {
 }
 
 #description,
-#goal {
+#goal,
+#rules {
   margin: 3rem 0;
   padding: 3rem 2rem;
   border: 1px solid hsl(0, 0%, 50%);
   border-radius: 0.75rem;
+}
+
+#rules {
+  display: flex;
+  align-items: center;
+}
+
+#rules > p {
+  margin-right: 0.75rem;
+}
+
+#rules > ol {
+  border-left: 1px solid black;
 }
 
 #description h1,
@@ -39,7 +53,8 @@ main {
 }
 
 #description > p,
-#goal article {
+#goal article,
+#rules ol {
   text-align: justify;
 }
 
@@ -58,7 +73,8 @@ main {
 }
 
 #nav-cards,
-#goal-cards {
+#goal-cards,
+#rule-cards {
   display: flex;
   justify-content: space-evenly;
   gap: 1.5rem;
@@ -67,7 +83,8 @@ main {
 }
 
 #nav-cards > div,
-#goal-cards > div {
+#goal-cards > div,
+#rule-cards > div {
   min-height: 300px;
   display: flex;
   flex-direction: column;

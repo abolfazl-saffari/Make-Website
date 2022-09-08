@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+
+header nav {
+  max-width: 1440px;
+  margin: auto;
+}
+
+#section-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+#section-cards > div {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 200px 0 0;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 60%);
+  border-radius: 0.75rem;
+}
+
+#section-cards > div > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+#section-cards > div > article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+#section {
+  text-transform: capitalize;
+}
+
+#section table {
+  width: 80%;
+  margin: auto;
+}
+
+#section table,
+td {
+  border: 1px solid hsl(0, 0%, 0%);
+}
+
+#section table thead tr > th {
+  text-align: center;
+}
+
+main,
+footer {
+  width: 95vw;
+  max-width: 1440px;
+  margin: auto;
+}
+
+footer p {
+  color: hsl(0, 0%, 60%);
+  text-align: center;
+  font-size: 3rem;
+  padding: 4rem 0;
+}

@@ -1,0 +1,105 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  list-style-type: none;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+
+header nav {
+  max-width: 1440px;
+  margin: auto;
+}
+
+#goal {
+  margin: 3rem 0;
+  padding: 3rem 2rem;
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 0.75rem;
+}
+
+#goal h1 {
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+#goal article {
+  text-align: justify;
+}
+
+#goal > p,
+#goal article {
+  margin-bottom: 0.75rem;
+}
+
+#goal article > p {
+  display: inline;
+}
+
+#goal article p:first-child {
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+#goal-cards {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+  text-align: center;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+#goal-cards > div {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex: 200px 0 0;
+  padding: 2rem;
+  background-color: hsl(0, 0%, 60%);
+  border-radius: 0.75rem;
+}
+
+#goal-cards > div > img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+#goal-cards > div > article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+main,
+footer {
+  width: 95vw;
+  max-width: 1440px;
+  margin: auto;
+}
+
+footer p {
+  color: hsl(0, 0%, 60%);
+  text-align: center;
+  font-size: 3rem;
+  padding: 4rem 0;
+}

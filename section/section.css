@@ -26,20 +26,6 @@ header nav {
   margin: auto;
 }
 
-main,
-footer {
-  width: 95vw;
-  max-width: 1440px;
-  margin: auto;
-}
-
-footer p {
-  color: hsl(0, 0%, 60%);
-  text-align: center;
-  font-size: 3rem;
-  padding: 4rem 0;
-}
-
 #section-cards {
   display: flex;
   justify-content: space-evenly;
@@ -83,11 +69,25 @@ footer p {
   margin: auto;
 }
 
+#section table,
+td {
+  border: 1px solid hsl(0, 0%, 0%);
+}
+
 #section table thead tr > th {
   text-align: center;
 }
 
-#section table,
-td {
-  border: 1px solid hsl(0, 0%, 0%);
+main,
+footer {
+  width: 95vw;
+  max-width: 1440px;
+  margin: auto;
+}
+
+footer p {
+  color: hsl(0, 0%, 60%);
+  text-align: center;
+  font-size: 3rem;
+  padding: 4rem 0;
 }

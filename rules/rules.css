@@ -26,30 +26,13 @@ header nav {
   margin: auto;
 }
 
-main,
-footer {
-  width: 95vw;
-  max-width: 1440px;
-  margin: auto;
-}
-
-footer p {
-  color: hsl(0, 0%, 60%);
-  text-align: center;
-  font-size: 3rem;
-  padding: 4rem 0;
-}
-
 #rules {
+  display: flex;
+  align-items: center;
   margin: 3rem 0;
   padding: 3rem 2rem;
   border: 1px solid hsl(0, 0%, 50%);
   border-radius: 0.75rem;
-}
-
-#rules {
-  display: flex;
-  align-items: center;
 }
 
 #rules > p {
@@ -57,11 +40,8 @@ footer p {
 }
 
 #rules > ol {
-  border-left: 1px solid hsl(0, 0%, 0%);
-}
-
-#rules ol {
   text-align: justify;
+  border-left: 1px solid hsl(0, 0%, 0%);
 }
 
 #rule-cards {
@@ -96,6 +76,20 @@ footer p {
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
+}
+
+main,
+footer {
+  width: 95vw;
+  max-width: 1440px;
+  margin: auto;
+}
+
+footer p {
+  color: hsl(0, 0%, 60%);
+  text-align: center;
+  font-size: 3rem;
+  padding: 4rem 0;
 }
 
 @media only screen and (max-width: 425px) {
